@@ -44,7 +44,7 @@
                 <use href="./images/icons.svg#icon-basket"></use>
               </svg>
             </a>
-            <button class="button" type="button">Contact us</button>
+            <button class="button modal-btn-open" type="button">Contact us</button>
           </div>
         </div>
       </div>
@@ -222,7 +222,90 @@
           <div class="contacts-section-container">
             <h2 class="contacts-section-title">Our experts will take care of your friend</h2>
             <p class="contacts-section-text">Fill out the form so we can contact you!</p>
-            <button class="button" type="button">Contact us</button>
+            <form name="form" autocomplete="off">
+              <div class="form-field input">
+                <label class="input-label visually-hidden" for="user-name"
+                >Your name</label
+                >
+                <svg class="form-icon" width="32px" height="32px">
+                  <use href="./images/icons.svg#icon-form-owner"></use>
+                </svg>
+                <input
+                        class="input-control"
+                        type="text"
+                        name="user-name"
+                        id="user-name"
+                        placeholder="Your name"
+                        minlength="3"
+                        maxlength="20"
+                        pattern="^\S+\s\S+$"
+                        required
+                />
+              </div>
+
+              <div class="form-field input">
+                <label class="input-label visually-hidden" for="pet-name"
+                >Pet name</label
+                >
+                <svg class="form-icon" width="32px" height="32px">
+                  <use href="./images/icons.svg#icon-form-pet"></use>
+                </svg>
+                <input
+                        class="input-control"
+                        type="text"
+                        name="pet-name"
+                        id="pet-name"
+                        placeholder="Pet name"
+                        minlength="3"
+                        maxlength="20"
+                        required
+                />
+              </div>
+
+              <div class="form-field input">
+                <label class="input-label visually-hidden" for="user-tel"
+                >Your phone</label
+                >
+                <svg class="form-icon" width="32px" height="32px">
+                  <use href="./images/icons.svg#icon-form-phone"></use>
+                </svg>
+                <input
+                        class="input-control"
+                        type="tel"
+                        name="user-tel"
+                        id="user-tel"
+                        placeholder="Your phone"
+                        pattern="^\+[0-9]{12}"
+                        required
+                />
+              </div>
+
+              <div class="form-field input">
+                <label class="input-label visually-hidden" for="user-email"
+                >Your email</label
+                >
+                <svg class="form-icon" width="32px" height="32px">
+                  <use href="./images/icons.svg#icon-form-email"></use>
+                </svg>
+                <input
+                        class="input-control"
+                        type="email"
+                        name="user-email"
+                        id="user-email"
+                        placeholder="Your email"
+                        required
+                />
+              </div>
+
+              <button class="modal-button button" type="button">
+                Contact us
+              </button>
+              <div class="checkbox">
+                <input class="checkbox-input" type="checkbox"
+                       id="conditions" name="conditions"/>
+                <label class="checkbox-label" for="conditions">I agree to the privacy policy</label>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -246,12 +329,12 @@
               </div>
               <div class="footer-social">
                 <a href="#">
-                  <svg class="instagram-icon" width="40px" height="40px">
+                  <svg class="instagram-icon" width="32px" height="32px">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg class="facebook-icon" width="40px" height="40px">
+                  <svg class="facebook-icon" width="32px" height="32px">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
@@ -273,11 +356,150 @@
             </ul>
           </nav>
           <div class="footer-form-section">
-            <button class="button" type="button">Contact us</button>
+            <form name="footer-form" autocomplete="off">
+              <div class="footer-form-field input">
+                <label class="footer-input-label visually-hidden" for="user-email"
+                >Your email</label
+                >
+                <svg class="footer-form-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-form-email"></use>
+                </svg>
+                <input
+                        class="footer-input-control"
+                        type="email"
+                        name="user-email"
+                        id="user-email"
+                        placeholder="Your email"
+                        required
+                />
+              </div>
+
+              <div class="footer-form-field input">
+                <label class="footer-input-label visually-hidden" for="user-cmc"
+                >Your cmc</label
+                >
+                <input
+                        class="footer-input-control"
+                        type="text"
+                        name="user-cmc"
+                        id="user-cmc"
+                        placeholder="Your cmc"
+                        minlength="5"
+                        maxlength="30"
+                        required
+                />
+              </div>
+
+              <button class="footer-button button" type="button">
+                Contact us
+              </button>
+              <div class="footer-checkbox">
+                <input class="footer-checkbox-input" type="checkbox"
+                       id="conditions" name="conditions"/>
+                <label class="footer-checkbox-label" for="conditions">I agree to the privacy policy</label>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </footer>
-    <div class="backdrop"></div>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">Our experts will take care of your friend</h2>
+        <p class="modal-text">Fill out the form so we can contact you!</p>
+        <form name="form" autocomplete="off">
+          <div class="form-field input">
+            <label class="input-label visually-hidden" for="user-name"
+            >Your name</label
+            >
+            <svg class="form-icon" width="32px" height="32px">
+              <use href="./images/icons.svg#icon-form-owner"></use>
+            </svg>
+            <input
+                    class="input-control"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Your name"
+                    minlength="3"
+                    maxlength="20"
+                    pattern="^\S+\s\S+$"
+                    required
+            />
+          </div>
+
+          <div class="form-field input">
+            <label class="input-label visually-hidden" for="pet-name"
+            >Pet name</label
+            >
+            <svg class="form-icon" width="32px" height="32px">
+              <use href="./images/icons.svg#icon-form-pet"></use>
+            </svg>
+            <input
+                    class="input-control"
+                    type="text"
+                    name="pet-name"
+                    id="pet-name"
+                    placeholder="Pet name"
+                    minlength="3"
+                    maxlength="20"
+                    required
+            />
+          </div>
+
+          <div class="form-field input">
+            <label class="input-label visually-hidden" for="user-tel"
+            >Your phone</label
+            >
+            <svg class="form-icon" width="32px" height="32px">
+              <use href="./images/icons.svg#icon-form-phone"></use>
+            </svg>
+            <input
+                    class="input-control"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Your phone"
+                    pattern="^\+[0-9]{12}"
+                    required
+            />
+          </div>
+
+          <div class="form-field input">
+            <label class="input-label visually-hidden" for="user-email"
+            >Your email</label
+            >
+            <svg class="form-icon" width="32px" height="32px">
+              <use href="./images/icons.svg#icon-form-email"></use>
+            </svg>
+            <input
+                    class="input-control"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Your email"
+                    required
+            />
+          </div>
+
+          <button class="modal-button button" type="submit">
+            Contact us
+          </button>
+          <div class="checkbox">
+            <input class="checkbox-input" type="checkbox"
+                   id="conditions" name="conditions"/>
+            <label class="checkbox-label" for="conditions">I agree to the privacy policy</label>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
