@@ -1,0 +1,39 @@
+.hero-section {
+  background-image: url('../images/hero-section-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-section-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 100px;
+}
+.hero-section-content {
+  margin-top: 217px;
+}
+.hero-section-title {
+  max-width: 635px;
+  margin-bottom: 40px;
+  font-family: Rowdies, sans-serif;
+  font-size: 72px;
+  line-height: 120%;
+  letter-spacing: 3.6px;
+}
+.hero-section-text {
+  max-width: 500px;
+  margin-bottom: 24px;
+}
+.hero-section-animation {
+  margin: 240px auto 60px;
+}
+.hero-section-animation {
+  background-image: url('../images/hero-section-dog-background.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+.hero-section-image{
+  margin: 55px 11px 0 72px;
+}

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dog club</title>
-    <link rel="stylesheet" href="./css/styles.css"/>
-    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>-->
+    <link rel="stylesheet" href="./scss/main.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
     <header class="header">
@@ -58,14 +58,18 @@
               <p class="hero-section-text">Human–canine bonding is the relationship between dogs and humans</p>
               <button class="button" type="button">Explore More</button>
             </div>
-            <img class="hero-section-image" src="./images/hero-section-dog.jpg" alt="Smart Dog">
+            <div class="hero-section-animation">
+              <img class="hero-section-image" src="./images/hero-section-dog.jpg" alt="Smart Dog">
+            </div>
           </div>
         </div>
       </section>
       <section class="walk-section" id="walk-section">
         <div class="container">
           <div class="walk-section-container">
-            <img class="walk-section-image" src="./images/walk-section-dog.jpg" alt="Cute Dog">
+            <div class="walk-section-animation">
+              <img class="walk-section-image" src="./images/walk-section-dog.jpg" alt="Cute dog"/>
+            </div>
             <div class="walk-section-content">
               <h2 class="walk-section-title">Less talk and more walk</h2>
               <p class="walk-section-text">Sometimes our career, lifestyle, or routines can make it difficult
@@ -79,141 +83,260 @@
       </section>
       <section class="services-section" id="services-section">
         <div class="container">
+          <h2 class="services-section-title">Services category</h2>
           <div class="services-section-container">
-            <h2 class="services-section-title">Services category</h2>
-            <div class="services-section-content">
-              <ul class="services-section-list">
-                <li class="services-section-card">
-                  <svg class="service-icon" width="96px" height="96px">
-                    <use href="./images/icons.svg#icon-grooming"></use>
-                  </svg>
-                  <p>Grooming</p>
-                </li>
-                <li class="services-section-card">
-                  <svg class="service-icon" width="96px" height="96px">
-                    <use href="./images/icons.svg#icon-nutrition"></use>
-                  </svg>
-                  <p>Nutrition</p>
-                </li>
-                <li class="services-section-card">
-                  <svg class="service-icon" width="96px" height="96px">
-                    <use href="./images/icons.svg#icon-training"></use>
-                  </svg>
-                  <p>Training</p>
-                </li>
-                <li class="services-section-card">
-                  <svg class="service-icon" width="96px" height="96px">
-                    <use href="./images/icons.svg#icon-bathing"></use>
-                  </svg>
-                  <p>Bathing</p>
-                </li>
-              </ul>
-              <a class="services-section-link link" href="#">more services</a>
-            </div>
+            <ul class="services-section-list">
+              <li class="services-section-card">
+                <svg class="service-icon" width="96px" height="96px">
+                  <use href="./images/icons.svg#icon-grooming"></use>
+                </svg>
+                <p>Grooming</p>
+              </li>
+              <li class="services-section-card">
+                <svg class="service-icon" width="96px" height="96px">
+                  <use href="./images/icons.svg#icon-nutrition"></use>
+                </svg>
+                <p>Nutrition</p>
+              </li>
+              <li class="services-section-card">
+                <svg class="service-icon" width="96px" height="96px">
+                  <use href="./images/icons.svg#icon-training"></use>
+                </svg>
+                <p>Training</p>
+              </li>
+              <li class="services-section-card">
+                <svg class="service-icon" width="96px" height="96px">
+                  <use href="./images/icons.svg#icon-bathing"></use>
+                </svg>
+                <p>Bathing</p>
+              </li>
+            </ul>
+            <a class="services-section-link link" href="#">more services</a>
           </div>
         </div>
       </section>
       <section class="customer-section" id="customer-section">
         <div class="container">
           <h2 class="customer-section-title">Happy customer</h2>
-          <div class="customer-section-container">
-            <button class="customer-section-button" type="button">
+          <div class="customer-section-slider">
+            <button class="customer-section-button slider-button prev" type="button">
+              <svg width="16px" height="16px">
+                <use href="./images/icons.svg#icon-slider-arrow"></use>
+              </svg>
             </button>
-            <div class="customer-section-content">
-              <ul class="customer-section-list">
-                <li class="customer-section-item">
+            <div class="customer-section-container swiper-container">
+              <ul class="customer-section-list swiper-wrapper">
+                <li class="swiper-slide">
                   <article class="customer-section-card">
                     <img
-                      class="customer-section-image"
-                      src="./images/christin-tom.jpg"
-                      alt="Christin & Tom"
+                            class="customer-section-image"
+                            src="./images/christin-tom.jpg"
+                            alt="Christin & Tom"
                     />
                     <div class="customer-section-text">
                       <h3>Christin & Tom</h3>
                       <p>Love the overall workout experience!</p>
                       <div class="customer-section-bones">
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
+                        <div>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                        </div>
+                        <p class="customer-section-grade">5/5</p>
                       </div>
                     </div>
                   </article>
                 </li>
-                <li class="customer-section-item">
+                <li class="swiper-slide">
                   <article class="customer-section-card">
                     <img
-                      class="customer-section-image"
-                      src="./images/anna-tobby.jpg"
-                      alt="Anna & Tobby"
+                            class="customer-section-image"
+                            src="./images/anna-tobby.jpg"
+                            alt="Anna & Tobby"
                     />
                     <div class="customer-section-text">
                       <h3>Anna & Tobby</h3>
                       <p>Amazing Products & Delivery on time.</p>
                       <div class="customer-section-bones">
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
+                        <div>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon white" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                        </div>
+                        <p class="customer-section-grade">4/5</p>
                       </div>
                     </div>
                   </article>
                 </li>
-                <li class="customer-section-item">
+                <li class="swiper-slide">
                   <article class="customer-section-card">
                     <img
-                      class="customer-section-image"
-                      src="./images/sindy-kitch.jpg"
-                      alt="Sindy & Kitch"
+                            class="customer-section-image"
+                            src="./images/sindy-kitch.jpg"
+                            alt="Sindy & Kitch"
                     />
                     <div class="customer-section-text">
                       <h3>Sindy & Kitch</h3>
                       <p>Great job with the trainer!</p>
                       <div class="customer-section-bones">
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
-                        <svg class="bone-icon" width="32px" height="14px">
-                          <use href="./images/icons.svg#icon-bone"></use>
-                        </svg>
+                        <div>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                        </div>
+                        <p class="customer-section-grade">5/5</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+<!--                щоб не зникали кнопки-->
+                <li class="swiper-slide">
+                  <article class="customer-section-card">
+                    <img
+                            class="customer-section-image"
+                            src="./images/christin-tom.jpg"
+                            alt="Christin & Tom"
+                    />
+                    <div class="customer-section-text">
+                      <h3>Christin & Tom</h3>
+                      <p>Love the overall workout experience!</p>
+                      <div class="customer-section-bones">
+                        <div>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                        </div>
+                        <p class="customer-section-grade">5/5</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="customer-section-card">
+                    <img
+                            class="customer-section-image"
+                            src="./images/anna-tobby.jpg"
+                            alt="Anna & Tobby"
+                    />
+                    <div class="customer-section-text">
+                      <h3>Anna & Tobby</h3>
+                      <p>Amazing Products & Delivery on time.</p>
+                      <div class="customer-section-bones">
+                        <div>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon white" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                        </div>
+                        <p class="customer-section-grade">4/5</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="customer-section-card">
+                    <img
+                            class="customer-section-image"
+                            src="./images/sindy-kitch.jpg"
+                            alt="Sindy & Kitch"
+                    />
+                    <div class="customer-section-text">
+                      <h3>Sindy & Kitch</h3>
+                      <p>Great job with the trainer!</p>
+                      <div class="customer-section-bones">
+                        <div>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="bone-icon" width="32px" height="14px">
+                            <use href="./images/icons.svg#icon-bone"></use>
+                          </svg>
+                        </div>
+                        <p class="customer-section-grade">5/5</p>
                       </div>
                     </div>
                   </article>
                 </li>
               </ul>
+              <div class="pagination">
+                <span class="pagination-button"></span>
+                <span class="pagination-button"></span>
+                <span class="pagination-button"></span>
+              </div>
             </div>
-            <button class="customer-section-button" type="button"></button>
+            <button class="customer-section-button slider-button next" type="button">
+              <svg width="16px" height="16px">
+                <use href="./images/icons.svg#icon-slider-arrow"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -499,6 +622,8 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/customers-slider.js"></script>
     <script src="./js/modal.js"></script>
 
   </body>

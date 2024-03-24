@@ -1,0 +1,23 @@
+.customer-section-title {
+  margin-bottom: 48px;
+  font-family: Rowdies, sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+}
+.customer-section-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.customer-section-container {
+  overflow: hidden;
+}
+.customer-section-list {
+  margin-bottom: 32px;
+}
+.customer-section-button {
+  display: flex;
+}

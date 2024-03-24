@@ -1,0 +1,30 @@
+.walk-section-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+.walk-section-animation {
+  background-image: url('../images/walk-section-background.png');
+  background-repeat: no-repeat;
+  background-position: 58px 90px;
+  background-size: 78% 78%;
+}
+.walk-section-image {
+  padding: 175px 60px 100px;
+}
+.walk-section-content {
+  max-width: 640px;
+  margin-top: 155px;
+}
+.walk-section-title {
+  max-width: 428px;
+  margin-bottom: 40px;
+  font-family: Rowdies, sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 120%;
+}
+.walk-section-text {
+  margin-bottom: 24px;
+}

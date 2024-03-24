@@ -1,0 +1,32 @@
+.form-field {
+  position: relative;
+  margin-bottom: 24px;
+}
+.form-icon {
+  position: absolute;
+  top: 8px;
+  left: 40px;
+  fill: var(--color-primary-orange);
+}
+.modal-button {
+  margin: 0 auto;
+  display: block; /*щоб працював margin*/
+}
+
+
+.footer-form-field {
+  position: relative;
+  margin-bottom: 16px;
+}
+.footer-form-icon {
+  position: absolute;
+  top: 8px;
+  left: 30px;
+  fill: var(--color-primary-orange);
+}
+.footer-button {
+  margin: 0 auto;
+  padding: 8px 24px;
+  font-weight: 700;
+  display: block; /*щоб працював margin*/
+}

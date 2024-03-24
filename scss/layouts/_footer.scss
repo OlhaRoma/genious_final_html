@@ -1,0 +1,38 @@
+.footer {
+  background: var(--color-secondary-yellow);
+}
+.footer-container {
+  position: relative;
+  margin-bottom: 50px;
+  padding: 32px 295px 25px 0;
+  display: flex;
+  gap: 136px;
+}
+.footer-container::after {
+  position: absolute;
+  width: 292px;
+  height: 305px;
+  right: 3px;
+  top: -18px;
+  background-image: url('../images/footer-dog.png');
+  background-repeat: no-repeat;
+  content: '';
+}
+.footer-nav {
+  display: flex;
+  gap: 136px;
+}
+.footer-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-form-section {
+  flex-grow: 1;
+}
+.footer-social {
+  fill: var(--color-primary-orange);
+}
+.footer-form-section {
+  text-align: center;
+}

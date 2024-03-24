@@ -1,0 +1,27 @@
+.services-section {
+  background-image: url('../images/services-section-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services-section-title {
+  padding-top: 68px;
+  margin: 0 auto 48px;
+  font-family: Rowdies, sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+}
+.services-section-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  margin: 0 auto;
+  padding-bottom: 96px;
+}
+.services-section-list {
+  display: flex;
+  gap: 24px;
+}
