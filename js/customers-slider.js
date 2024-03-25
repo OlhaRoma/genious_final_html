@@ -12,8 +12,8 @@ const swiper = new Swiper('.swiper-container', {
   },
   pagination: {
     el: '.pagination',
-    bulletClass: 'pagination-button',
-    bulletActiveClass: 'pagination-button--active',
+    bulletClass: 'pagination__button',
+    bulletActiveClass: 'pagination__button--active',
   },
   navigation: {
     nextEl: '.slider-button.next',

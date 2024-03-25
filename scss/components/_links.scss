@@ -3,14 +3,13 @@
   font-size: 18px;
   line-height: 133.333%;
   text-decoration: none;
-}
-.link:hover {
-  color: var(--color-primary-orange);
+
+  &:hover {
+    color: var(--color-primary-orange);
+  }
 }
 
-.services-section-link {
+.more-link {
   color: var(--color-primary-orange);
-  font-size: 18px;
-  line-height: 133.333%;
   letter-spacing: 0.9px;
 }

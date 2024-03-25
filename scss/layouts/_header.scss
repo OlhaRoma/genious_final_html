@@ -1,26 +1,27 @@
 .header {
   padding-top: 32px;
-}
-.header-container {
-  display: flex;
-  gap: 115px;
-  align-items: center;
-}
-.header-menu {
-  display: flex;
-  flex-grow: 1;
-  gap: 48px;
-}
-.header-buttons {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-}
 
-.basket-icon,
-.dogclub-icon {
-  fill: var(--color-primary-orange);
-}
-.basket-icon {
-  margin-top: 10px;
+  &__container {
+    display: flex;
+    gap: 115px;
+    align-items: center;
+  }
+  &__menu {
+    display: flex;
+    flex-grow: 1;
+    gap: 48px;
+  }
+  &__buttons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  &__basket-icon,
+  &__dogclub-icon {
+    margin-top: 10px;
+    fill: var(--color-primary-orange);
+  }
+  &__basket-icon {
+    margin-top: 10px;
+  }
 }

@@ -4,44 +4,53 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  &::after,
+  &::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    content: '';
+  }
+  &::before {
+    width: 488px;
+    height: 520px;
+    left: -60px;
+    bottom: 0;
+    background-image: url('../images/contacts-small-dog.png');
+  }
+  &::after {
+    width: 322px;
+    height: 752px;
+    right: 0;
+    bottom: -70px;
+    background-image: url('../images/contacts-big-dog.png');
+  }
+  &__container {
+    max-width: 600px;
+    margin: 0 auto 110px;
+    padding-top: 200px;
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 16px;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  &__text {
+    color: var(--color-secondary-gray);
+    margin-bottom: 42px;
+    font-size: 18px;
+    line-height: 133.333%;
+    letter-spacing: 0.9px;
+  }
+  &__form-field {
+    margin-bottom: 24px;
+  }
+  &__button {
+    margin: 0 auto;
+    display: block; /*щоб працював margin*/
+  }
 }
-.contacts-section::before {
-  position: absolute;
-  width: 488px;
-  height: 520px;
-  left: -60px;
-  bottom: 0;
-  background-image: url('../images/contacts-small-dog.png');
-  background-repeat: no-repeat;
-  content: '';
-}
-.contacts-section::after {
-  position: absolute;
-  width: 322px;
-  height: 752px;
-  right: 0;
-  bottom: -70px;
-  background-image: url('../images/contacts-big-dog.png');
-  background-repeat: no-repeat;
-  content: '';
-}
-.contacts-section-container {
-  max-width: 600px;
-  margin: 0 auto 110px;
-  padding-top: 200px;
-  text-align: center;
-}
-.contacts-section-title {
-  margin-bottom: 16px;
-  font-family: 'Rowdies', sans-serif;
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 120%;
-}
-.contacts-section-text {
-  color: var(--color-secondary-gray);
-  margin-bottom: 42px;
-  font-size: 18px;
-  line-height: 133.333%;
-  letter-spacing: 0.9px;
-}
+
