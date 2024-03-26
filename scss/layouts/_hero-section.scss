@@ -1,5 +1,5 @@
 .hero-section {
-  background-image: url('../images/hero-section-background.png');
+  background-image: url('/images/hero-section-background.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -8,31 +8,70 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 100px;
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 65px;
+      background-image: url('/images/hero-animation.svg');
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: 118% 51.7%;
+    }
   }
   &__content {
-    margin-top: 217px;
+    margin: 35px auto 65px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-top: 217px;
+      text-align: left;
+    }
   }
   &__title {
-    max-width: 635px;
-    margin-bottom: 40px;
-    font-family: Rowdies, sans-serif;
-    font-size: 72px;
-    line-height: 120%;
-    letter-spacing: 3.6px;
+    max-width: 303px;
+    margin: 0 auto 24px;
+    font-size: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 635px;
+      margin-bottom: 40px;
+      font-size: 72px;
+      letter-spacing: 3.6px;
+    }
   }
   &__text {
-    max-width: 500px;
-    margin-bottom: 24px;
+    max-width: 296px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 120%;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 500px;
+      margin-bottom: 24px;
+      font-size: 22px;
+      line-height: 154.545%;
+    }
   }
   &__animation {
-    margin: 240px auto 60px;
-    background-image: url('../images/hero-section-dog-background.png');
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: cover;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      margin: 240px auto 60px;
+      background-image: url('/images/hero-section-dog-background.png');
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: cover;
+    }
   }
   &__image{
     margin: 55px 11px 0 72px;
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0;
+    }
   }
 }

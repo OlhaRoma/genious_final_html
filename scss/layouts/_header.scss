@@ -1,27 +1,89 @@
 .header {
-  padding-top: 32px;
+  padding-top: 18px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 32px;
+  }
 
   &__container {
     display: flex;
     gap: 115px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
     align-items: center;
   }
   &__menu {
-    display: flex;
-    flex-grow: 1;
-    gap: 48px;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 48px;
+      flex-grow: 1;
+      justify-content: center;
+    }
   }
   &__buttons {
     display: flex;
-    gap: 24px;
+    gap: 16px;
     align-items: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 24px;
+    }
   }
-  &__basket-icon,
-  &__dogclub-icon {
-    margin-top: 10px;
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+  &__logo-icon,
+  &__dogclub-icon,
+  &__basket-icon, {
     fill: var(--color-primary-orange);
   }
+  &__logo-icon {
+    width: 16px;
+    height: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 43px;
+      height: 43px;
+    }
+  }
+  &__dogclub-icon {
+    width: 74px;
+    height: 20px;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 137px;
+      height: 40px;
+    }
+  }
   &__basket-icon {
-    margin-top: 10px;
+    width: 24px;
+    height: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__burger {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    fill: var(--color-primary-orange);
+    background-color: transparent;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }

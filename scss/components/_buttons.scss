@@ -1,13 +1,19 @@
 .button {
   display: block;
-  padding: 16px 32px;
+  padding: 8px 24px;
   color: var(--color-primary-white);
-  font-size: 18px;
-  font-weight: 500;
   background: var(--color-primary-orange);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
   border-radius: 8px;
   border: none;
   cursor: pointer;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 16px 32px;
+    font-size: 18px;
+  }
 
   &:hover {
     background: var(--color-secondary-orange);

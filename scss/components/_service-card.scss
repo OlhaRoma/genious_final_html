@@ -1,5 +1,7 @@
 .service-card {
   padding: 47px 72px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
@@ -12,5 +14,6 @@
 .service-card p {
   margin-bottom: 0;
   color: var(--color-primary-orange);
+  font-size: 22px;
   font-weight: 600;
 }

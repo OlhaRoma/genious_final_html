@@ -14,12 +14,12 @@
         <div class="header__container">
           <div class="header__logo">
             <a href="./index.html">
-              <svg class="header__logo-icon" width="43px" height="43px">
+              <svg class="header__logo-icon">
                 <use href="./images/icons.svg#icon-logo"></use>
               </svg>
             </a>
             <a href="./index.html">
-              <svg class="header__dogclub-icon" width="137px" height="40px">
+              <svg class="header__dogclub-icon">
                 <use href="./images/icons.svg#icon-dogclub"></use>
               </svg>
             </a>
@@ -40,23 +40,77 @@
           </ul>
           <div class="header__buttons">
             <a href="#">
-              <svg class="header__basket-icon" width="40px" height="40px">
+              <svg class="header__basket-icon">
                 <use href="./images/icons.svg#icon-basket"></use>
               </svg>
             </a>
-            <button class="button modal-btn-open" type="button">Contact us</button>
+            <button class="header__button button modal-btn-open" type="button">Contact us</button>
+            <button class="header__burger menu-btn-open" type="button">
+              <svg width="24px" height="24px">
+                <use href="./images/icons.svg#icon-burger"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="mobile-menu">
+            <div class="mobile-menu__header">
+              <div class="mobile-menu__logo">
+                <a href="./index.html">
+                  <svg class="header__logo-icon">
+                    <use href="./images/icons.svg#icon-logo"></use>
+                  </svg>
+                </a>
+                <a href="./index.html">
+                  <svg class="header__dogclub-icon">
+                    <use href="./images/icons.svg#icon-dogclub"></use>
+                  </svg>
+                </a>
+              </div>
+              <button class="mobile-menu__btn-close menu-btn-close" type="button">
+                <svg class="mobile-menu__close-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="mobile-menu__content">
+              <ul class="mobile-menu__menu">
+                <li>
+                  <a class="link" href="#walk-section">Less talk</a>
+                </li>
+                <li>
+                  <a class="link" href="#services-section">Services category</a>
+                </li>
+                <li>
+                  <a class="link" href="#customer-section">Happy customer</a>
+                </li>
+                <li>
+                  <a class="link" href="#contacts-section">Contact</a>
+                </li>
+              </ul>
+              <div class="mobile-menu__social">
+                <a href="#">
+                  <svg class="mobile-menu__instagram-icon" width="32px" height="32px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="mobile-menu__facebook-icon" width="32px" height="32px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
-        <div class="container">
+        <div class="hero-container">
           <div class="hero-section__container">
             <div class="hero-section__content">
-              <h1 class="hero-section__title">Taking care for your Smart Dog!</h1>
+              <h1 class="hero-section__title title">Taking care for your Smart Dog!</h1>
               <p class="hero-section__text">Human–canine bonding is the relationship between dogs and humans</p>
-              <button class="button" type="button">Explore More</button>
+              <button class="hero-section__button button" type="button">Explore More</button>
             </div>
             <div class="hero-section__animation">
               <img class="hero-section__image" src="./images/hero-section-dog.jpg" alt="Smart Dog">
@@ -71,7 +125,7 @@
               <img class="walk-section__image" src="./images/walk-section-dog.jpg" alt="Cute dog"/>
             </div>
             <div class="walk-section__content">
-              <h2 class="walk-section__title">Less talk and more walk</h2>
+              <h2 class="walk-section__title title">Less talk and more walk</h2>
               <p class="walk-section__text">Sometimes our career, lifestyle, or routines can make it difficult
                 to provide your pet with the recommended amount of exercise that they need.
                 Which is why, it’s okay to use an extra hand in walking dogs, so they are
@@ -83,11 +137,11 @@
       </section>
       <section class="services-section" id="services-section">
         <div class="container">
-          <h2 class="services-section__title">Services category</h2>
+          <h2 class="services-section__title title">Services category</h2>
           <div class="services-section__container">
             <ul class="services-section__list">
               <li class="service-card">
-                <svg class="service-icon" width="96px" height="96px">
+                <svg class="service-card__icon" width="96px" height="96px">
                   <use href="./images/icons.svg#icon-grooming"></use>
                 </svg>
                 <p>Grooming</p>
@@ -111,13 +165,19 @@
                 <p>Bathing</p>
               </li>
             </ul>
+            <div class="services-section__mobile-card service-card">
+              <svg class="service-card__icon" width="96px" height="96px">
+                <use href="./images/icons.svg#icon-nutrition"></use>
+              </svg>
+              <p>Nutrition</p>
+            </div>
             <a class="more-link link" href="#">more services</a>
           </div>
         </div>
       </section>
       <section class="customer-section" id="customer-section">
         <div class="container">
-          <h2 class="customer-section__title">Happy customer</h2>
+          <h2 class="customer-section__title title">Happy customer</h2>
           <div class="customer-section__slider">
             <button class="customer-section__button slider-button prev" type="button">
               <svg width="16px" height="16px">
@@ -135,7 +195,7 @@
                     />
                     <div class="customer-card__text">
                       <h3>Christin & Tom</h3>
-                      <p>Love the overall workout experience!</p>
+                      <h4>Love the overall workout experience!</h4>
                       <div class="customer-card__bones">
                         <div>
                           <svg class="customer-card__bone-icon" width="32px" height="14px">
@@ -154,7 +214,7 @@
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
                         </div>
-                        <p class="customer-card__grade">5/5</p>
+                        <p>5/5</p>
                       </div>
                     </div>
                   </article>
@@ -168,7 +228,7 @@
                     />
                     <div class="customer-card__text">
                       <h3>Anna & Tobby</h3>
-                      <p>Amazing Products & Delivery on time.</p>
+                      <h4>Amazing Products & Delivery on time.</h4>
                       <div class="customer-card__bones">
                         <div>
                           <svg class="customer-card__bone-icon" width="32px" height="14px">
@@ -187,7 +247,7 @@
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
                         </div>
-                        <p class="customer-card__grade">4/5</p>
+                        <p>4/5</p>
                       </div>
                     </div>
                   </article>
@@ -201,7 +261,7 @@
                     />
                     <div class="customer-card__text">
                       <h3>Sindy & Kitch</h3>
-                      <p>Great job with the trainer!</p>
+                      <h4>Great job with the trainer!</h4>
                       <div class="customer-card__bones">
                         <div>
                           <svg class="customer-card__bone-icon" width="32px" height="14px">
@@ -220,7 +280,7 @@
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
                         </div>
-                        <p class="customer-card__grade">5/5</p>
+                        <p>5/5</p>
                       </div>
                     </div>
                   </article>
@@ -235,7 +295,7 @@
                     />
                     <div class="customer-card__text">
                       <h3>Christin & Tom</h3>
-                      <p>Love the overall workout experience!</p>
+                      <h4>Love the overall workout experience!</h4>
                       <div class="customer-card__bones">
                         <div>
                           <svg class="customer-card__bone-icon" width="32px" height="14px">
@@ -254,7 +314,7 @@
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
                         </div>
-                        <p class="customer-card__grade">5/5</p>
+                        <p>5/5</p>
                       </div>
                     </div>
                   </article>
@@ -268,7 +328,7 @@
                     />
                     <div class="customer-card__text">
                       <h3>Anna & Tobby</h3>
-                      <p>Amazing Products & Delivery on time.</p>
+                      <h4>Amazing Products & Delivery on time.</h4>
                       <div class="customer-card__bones">
                         <div>
                           <svg class="customer-card__bone-icon" width="32px" height="14px">
@@ -287,7 +347,7 @@
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
                         </div>
-                        <p class="customer-card__grade">4/5</p>
+                        <p>4/5</p>
                       </div>
                     </div>
                   </article>
@@ -301,7 +361,7 @@
                     />
                     <div class="customer-card__text">
                       <h3>Sindy & Kitch</h3>
-                      <p>Great job with the trainer!</p>
+                      <h4>Great job with the trainer!</h4>
                       <div class="customer-card__bones">
                         <div>
                           <svg class="customer-card__bone-icon" width="32px" height="14px">
@@ -320,7 +380,7 @@
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
                         </div>
-                        <p class="customer-card__grade">5/5</p>
+                        <p>5/5</p>
                       </div>
                     </div>
                   </article>
@@ -332,7 +392,7 @@
                 <span class="pagination__button"></span>
               </div>
             </div>
-            <button class="customer-section-button slider-button next" type="button">
+            <button class="customer-section__button slider-button next" type="button">
               <svg width="16px" height="16px">
                 <use href="./images/icons.svg#icon-slider-arrow"></use>
               </svg>
@@ -343,14 +403,14 @@
       <section class="contacts-section" id="contacts-section">
         <div class="container">
           <div class="contacts-section__container">
-            <h2 class="contacts-section__title">Our experts will take care of your friend</h2>
+            <h2 class="contacts-section__title title">Our experts will take care of your friend</h2>
             <p class="contacts-section__text">Fill out the form so we can contact you!</p>
             <form name="contacts-form" autocomplete="off">
               <div class="contacts-section__form-field input">
                 <label class="input__label visually-hidden" for="user-name"
                 >Your name</label
                 >
-                <svg class="input__icon" width="32px" height="32px">
+                <svg class="input__icon">
                   <use href="./images/icons.svg#icon-form-owner"></use>
                 </svg>
                 <input
@@ -370,7 +430,7 @@
                 <label class="input__label visually-hidden" for="pet-name"
                 >Pet name</label
                 >
-                <svg class="input__icon" width="32px" height="32px">
+                <svg class="input__icon">
                   <use href="./images/icons.svg#icon-form-pet"></use>
                 </svg>
                 <input
@@ -389,7 +449,7 @@
                 <label class="input__label visually-hidden" for="user-tel"
                 >Your phone</label
                 >
-                <svg class="input__icon" width="32px" height="32px">
+                <svg class="input__icon">
                   <use href="./images/icons.svg#icon-form-phone"></use>
                 </svg>
                 <input
@@ -407,7 +467,7 @@
                 <label class="input__label visually-hidden" for="user-email"
                 >Your email</label
                 >
-                <svg class="input__icon" width="32px" height="32px">
+                <svg class="input__icon">
                   <use href="./images/icons.svg#icon-form-email"></use>
                 </svg>
                 <input
@@ -440,12 +500,12 @@
             <div class="footer__logos">
               <div class="footer__logo">
                 <a href="./index.html">
-                  <svg class="footer__logo-icon" width="43px" height="43px">
+                  <svg class="footer__logo-icon">
                     <use href="./images/icons.svg#icon-logo"></use>
                   </svg>
                 </a>
                 <a href="./index.html">
-                  <svg class="footer__dogclub-icon" width="137px" height="40px">
+                  <svg class="footer__dogclub-icon">
                     <use href="./images/icons.svg#icon-dogclub"></use>
                   </svg>
                 </a>
@@ -526,6 +586,7 @@
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__close-button modal-btn-close" type="button">
@@ -533,7 +594,7 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="modal__title">Our experts will take care of your friend</h2>
+        <h2 class="modal__title title">Our experts will take care of your friend</h2>
         <p class="modal__text">Fill out the form so we can contact you!</p>
         <form name="modal-form" autocomplete="off">
           <div class="modal__form-field input">
@@ -625,6 +686,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/customers-slider.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
   </body>
 </html>

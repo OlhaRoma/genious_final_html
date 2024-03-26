@@ -32,15 +32,10 @@
 
   &__title {
     margin-bottom: 16px;
-    font-family: 'Rowdies', sans-serif;
-    font-size: 56px;
-    font-weight: 400;
-    line-height: 120%;
   }
   &__text {
     color: var(--color-secondary-gray);
     margin-bottom: 42px;
-    font-size: 18px;
     line-height: 133.333%;
     letter-spacing: 0.9px;
   }
@@ -48,7 +43,7 @@
     margin-bottom: 24px;
   }
   &__button {
-    margin: 0 auto;
+    margin: 0 auto 16px;
     display: block; /*щоб працював margin*/
   }
   &__close-button {

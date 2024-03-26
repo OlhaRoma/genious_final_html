@@ -9,22 +9,26 @@
     background-color: var(--color-secondary-gray);
   }
   &__label {
+    position: relative;
     padding-left: 16px;
     font-size: 12px;
     font-weight: 300;
-    line-height: 120%;
     color: var(--color-secondary-gray);
 
     &:before {
       position: absolute;
-      top: 7px;
-      left: 208px;
+      top: -1px;
+      left: -8px;
       width: 16px;
       height: 16px;
-      margin-top: 5px;
       border: 1px solid var(--color-secondary-gray);
       border-radius: 2px;
       content: '';
+
+      @media screen and (min-width: $bp-tablet) {
+        top: -1px;
+        left: -16px;
+      }
     }
   }
 }
@@ -40,6 +44,7 @@
     background-color: var(--color-secondary-gray);
   }
   &__label {
+    position: relative;
     padding-left: 16px;
     font-size: 12px;
     font-weight: 300;
@@ -48,14 +53,19 @@
 
     &:before {
       position: absolute;
-      top: 7px;
-      left: 78px;
+      top: -7px;
+      left: -8px;
       width: 16px;
       height: 16px;
       margin-top: 5px;
       border: 1px solid var(--color-secondary-gray);
       border-radius: 2px;
       content: '';
+
+      @media screen and (min-width: $bp-tablet) {
+        top: -7px;
+        left: -16px;
+      }
     }
   }
 }
