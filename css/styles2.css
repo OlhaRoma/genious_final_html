@@ -1,0 +1,581 @@
+/*Fonts*/
+@font-face {
+    font-display: swap;
+    font-family: 'Rowdies';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/rowdies-v17-latin-regular.woff2") format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/fonts/roboto-v30-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/*Variables*/
+:root {
+    --color-primary-white: #FFFFFF;
+    --color-primary-orange: #FF9F0E;
+    --color-primary-black: #181817;
+    --color-secondary-orange: #FCB62A;
+    --color-secondary-yellow: #FFFAF3;
+    --color-secondary-lightgray: #F1F3FF;
+    --color-secondary-gray: #839AA9;
+    --color-secondary-lightpink: #F9F9FF;
+    --color-secondary-purple: #D9A6FF;
+}
+/*Base*/
+*,
+*::after,
+::before
+{
+    box-sizing: border-box;
+}
+body {
+    color: var(--color-primary-black);
+    background-color: var(--color-primary-white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+    background-image: url('../images/background-second-page.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+a {
+    display: inline-block;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.visually-hidden{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    max-width: 1276px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.link {
+    color: var(--color-primary-black);
+    line-height: 133.333%;
+    text-decoration: none;
+}
+.link:hover {
+    color: var(--color-primary-orange);
+}
+
+.button {
+    display: block;
+    padding: 16px 32px;
+    color: var(--color-primary-white);
+    background: var(--color-primary-orange);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.button:hover {
+    background: var(--color-secondary-orange);
+}
+/*Header*/
+.header {
+    padding-top: 32px;
+    margin-bottom: 80px;
+}
+.header-container {
+    display: flex;
+    gap: 115px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+.header-menu {
+    display: flex;
+    gap: 48px;
+    flex-grow: 1;
+    justify-content: center;
+}
+.header-buttons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.header-basket-icon,
+.header-dogclub-icon,
+.header-logo-icon {
+    fill: var(--color-primary-orange);
+}
+.header-logo-icon {
+    width: 43px;
+    height: 43px;
+}
+.header-dogclub-icon {
+    width: 137px;
+    height: 40px;
+}
+.header-basket-icon {
+    width: 40px;
+    height: 40px;
+}
+/*Nutrition section*/
+.nutrition-section-container {
+    margin-bottom: 88px;
+}
+.nutrition-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 72px;
+}
+.nutrition-section-title {
+    font-family: 'Rowdies', sans-serif;
+    font-size: 56px;
+    line-height: 120%;
+    color: var(--color-primary-orange);
+}
+.nutrition-section-sort {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.nutrition-sorting-title {
+    font-weight: 600;
+    line-height: 133.333%;
+    letter-spacing: 0.9px;
+    color: var(--color-primary-orange);
+}
+.nutrition-sorting {
+    display: flex;
+}
+.sort-link {
+    display: flex;
+    padding: 4px 8px;
+    color: var(--color-primary-black);
+    border-top: 1px solid var(--color-secondary-gray);
+    border-right: 1px solid var(--color-secondary-gray);
+    border-bottom: 1px solid var(--color-secondary-gray);
+}
+.sort-link:first-child {
+    border-radius: 2px 0 0 2px;
+    border: 1px solid var(--color-secondary-gray);
+}
+.sort-link:last-child {
+    border-radius: 0 2px 2px 0;
+}
+.sort-link:hover {
+    color: var(--color-primary-white);
+    background-color: var(--color-primary-orange);
+}
+.sort {
+    font-size: 16px;
+}
+.nutrition-section-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 100%;
+    gap: 40px 32px;
+    flex-wrap: wrap;
+}
+.nutrition-card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 96px) / 4);
+    height: 512px;
+    text-align: center;
+    border-radius: 8px;
+    background: var(--color-primary-white);
+    box-shadow: 0 8px 16px 0 rgba(24, 24, 23, 0.08);
+}
+.card-image {
+    padding: 14px 75px;
+}
+.card-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px 10px 24px;
+}
+.card-code {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.card-code p {
+    font-size: 14px;
+    color: var(--color-secondary-gray);
+}
+.card-grade {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.card-icon {
+    fill: var(--color-primary-orange);
+}
+.card-icon.grey {
+    fill: var(--color-secondary-gray);
+}
+.card-text {
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+.card-price {
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 600;
+}
+/*Pagination*/
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination-link {
+    display: flex;
+    width: 32px;
+    height: 24px;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary-black);
+}
+.pagination-link:hover {
+    color: var(--color-primary-white);
+    border-radius: 2px;
+    background-color: var(--color-primary-orange);
+}
+.pagination-button {
+    font-size: 14px;
+}
+
+/*Footer*/
+.footer {
+    background: var(--color-secondary-yellow);
+}
+.footer-container {
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+    padding: 32px 295px 25px 0;
+    gap: 136px;
+}
+.footer-container::after {
+    position: absolute;
+    width: 292px;
+    height: 310px;
+    right: 3px;
+    top: -18px;
+    background-image: url('../images/footer-dog.png');
+    background-repeat: no-repeat;
+    content: '';
+}
+.footer-nav {
+    display: flex;
+    gap: 136px;
+}
+.footer-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-logo-icon,
+.footer-dogclub-icon,
+.footer-instagram-icon,
+.footer-facebook-icon {
+    fill: var(--color-primary-orange);
+}
+.footer-logo-icon {
+    width: 43px;
+    height: 43px;
+}
+.footer-dogclub-icon {
+    width: 137px;
+    height: 40px;
+}
+.footer-form-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer-form-field {
+    margin-bottom: 16px;
+}
+.footer-button {
+    margin: 0 auto 4px;
+    padding: 8px 24px;
+    font-weight: 700;
+    display: block; /*щоб працював margin*/
+}
+
+/*Modal*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.backdrop.is-hidden {
+    /*display: none;*/ /*достатньо, якщо НЕ потрібна анімація*/
+    opacity: 0; /*якщо потрібна анімація*/
+    visibility: hidden; /*якщо потрібна анімація*/
+    pointer-events: none; /*якщо потрібна анімація*/
+}
+.modal {
+    position: relative;
+    width: 100%;
+    max-width: 880px;
+    height: 100%;
+    max-height: 880px;
+    padding: 140px;
+    text-align: center;
+    background-color: var(--color-secondary-yellow);
+    border-radius: 32px;
+    overflow-y: auto; /*щоб у вікні вміщався весь контент коректно, можна було скролити*/
+}
+.modal-title {
+    margin-bottom: 16px;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 120%;
+}
+.modal-text {
+    color: var(--color-secondary-gray);
+    margin-bottom: 42px;
+    line-height: 133.333%;
+    letter-spacing: 0.9px;
+}
+.modal-form-field {
+    margin-bottom: 24px;
+}
+.modal-button {
+    margin: 0 auto 16px;
+    display: block; /*щоб працював margin*/
+}
+.modal-close-button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    fill: transparent;
+    stroke: var(--color-primary-black);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.modal-close-icon {
+    background: transparent;
+}
+
+/*Input*/
+.input {
+    position: relative;
+}
+.input-label {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+}
+.input-icon {
+    position: absolute;
+    top: 8px;
+    left: 40px;
+    width: 32px;
+    height: 32px;
+    fill: var(--color-primary-orange);
+}
+.input-control {
+    position: relative;
+    padding: 12px 35px 12px 80px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 133.333%;
+    letter-spacing: 0.9px;
+    border: 1px solid var(--color-primary-orange);
+    border-radius: 8px;
+    background-color: transparent;
+}
+.input-control:focus {
+    color: var(--color-primary-black);
+    outline: none; /*щоб відображалась зміна кольору при наведенні*/
+}
+.input-control::placeholder {
+    font-size: 18px;
+    line-height: 133.333%;
+    color: var(--color-primary-orange);
+}
+.input-control:focus::placeholder {
+    color: var(--color-primary-black)
+}
+
+/*Checkbox*/
+.checkbox {
+    position: relative;
+}
+.checkbox-input {
+    appearance: none;
+}
+.checkbox-input:checked + .checkbox-label::before{
+    background-color: var(--color-secondary-gray);
+}
+.checkbox-label {
+    position: relative;
+    padding-left: 16px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 120%;
+    color: var(--color-secondary-gray)
+}
+.checkbox-label:before {
+    position: absolute;
+    top: -1px;
+    left: -16px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--color-secondary-gray);
+    border-radius: 2px;
+    content: '';
+}
+
+/*footer-input*/
+.footer-input {
+    position: relative;
+}
+.footer-input-label {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+}
+.footer-input-icon {
+    position: absolute;
+    top: 8px;
+    left: 24px;
+    fill: var(--color-primary-orange);
+}
+.footer-input-control {
+    position: relative;
+    padding: 10px 24px 10px 56px;
+    max-width: 320px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.9px;
+    border: 1px solid var(--color-primary-orange);
+    border-radius: 8px;
+    background-color: transparent;
+}
+.footer-input-control:focus {
+    font-weight: 400;
+    color: var(--color-primary-black);
+    outline: none; /*щоб відображалась зміна кольору при наведенні*/
+}
+.footer-input-control::placeholder {
+    color: var(--color-primary-orange);
+}
+.footer-input-control:focus::placeholder {
+    color: var(--color-primary-black)
+}
+
+/*footer-checkbox*/
+.footer-checkbox {
+    position: relative;
+}
+.footer-checkbox-input {
+    appearance: none;
+}
+.footer-checkbox-input:checked + .checkbox-label::before{
+    background-color: var(--color-secondary-gray);
+}
+.footer-checkbox-label {
+    position: relative;
+    padding-left: 16px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 120%;
+    color: var(--color-secondary-gray)
+}
+.footer-checkbox-label:before {
+    position: absolute;
+    top: -7px;
+    left: -16px;
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    border: 1px solid var(--color-secondary-gray);
+    border-radius: 2px;
+    content: '';
+}
