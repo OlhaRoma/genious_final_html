@@ -10,15 +10,26 @@
 
     @media screen and (min-width: $bp-desktop) {
       display: block;
-      background-image: url('/images/walk-section-background.png');
+      position: relative;
+      background-image: url('../images/walk-section-background.png');
       background-repeat: no-repeat;
       background-position: 58px 90px;
       background-size: 78% 78%;
     }
   }
-
   &__image {
     padding: 175px 60px 100px;
+  }
+  &__button {
+    position: absolute;
+    top: 142px;
+    right: 100px;
+    width: 161px;
+    height: 123px;
+    background-image: url('../images/walk-section-video.png');
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
   &__content {
     max-width: 320px;

@@ -105,7 +105,7 @@
     </header>
     <main>
       <section class="hero-section">
-        <div class="hero-container">
+        <div class="container">
           <div class="hero-section__container">
             <div class="hero-section__content">
               <h1 class="hero-section__title title">Taking care for your Smart Dog!</h1>
@@ -113,7 +113,10 @@
               <button class="hero-section__button button" type="button">Explore More</button>
             </div>
             <div class="hero-section__animation">
-              <img class="hero-section__image" src="./images/hero-section-dog.jpg" alt="Smart Dog">
+              <picture>
+                <source srcset="./images/hero-section-dog.jpg, ./images/hero-section-dog-2x.jpg">
+                <img class="hero-section__image" src="./images/hero-section-dog.jpg" alt="Smart Dog">
+              </picture>
             </div>
           </div>
         </div>
@@ -122,7 +125,11 @@
         <div class="container">
           <div class="walk-section__container">
             <div class="walk-section__animation">
-              <img class="walk-section__image" src="./images/walk-section-dog.jpg" alt="Cute dog"/>
+              <picture>
+                <source srcset="./images/walk-section-dog.jpg, ./images/walk-section-dog-2x.jpg">
+                <img class="walk-section__image" src="./images/walk-section-dog.jpg" alt="Cute dog"/>
+              </picture>
+              <button class="walk-section__button"></button>
             </div>
             <div class="walk-section__content">
               <h2 class="walk-section__title title">Less talk and more walk</h2>
@@ -188,11 +195,14 @@
               <ul class="customer-section__list swiper-wrapper">
                 <li class="swiper-slide">
                   <article class="customer-card">
-                    <img
-                            class="customer-card__image"
-                            src="./images/christin-tom.jpg"
-                            alt="Christin & Tom"
-                    />
+                    <picture>
+                      <source srcset="./images/christin-tom.jpg, ./images/christin-tom-2x.jpg">
+                      <img
+                              class="customer-card__image"
+                              src="./images/christin-tom.jpg"
+                              alt="Christin & Tom"
+                      />
+                    </picture>
                     <div class="customer-card__text">
                       <h3>Christin & Tom</h3>
                       <h4>Love the overall workout experience!</h4>
@@ -221,11 +231,14 @@
                 </li>
                 <li class="swiper-slide">
                   <article class="customer-card">
-                    <img
-                            class="customer-card__image"
-                            src="./images/anna-tobby.jpg"
-                            alt="Anna & Tobby"
-                    />
+                    <picture>
+                      <source srcset="./images/anna-tobby.jpg, ./images/anna-tobby-2x.jpg">
+                      <img
+                              class="customer-card__image"
+                              src="./images/anna-tobby.jpg"
+                              alt="Anna & Tobby"
+                      />
+                    </picture>
                     <div class="customer-card__text">
                       <h3>Anna & Tobby</h3>
                       <h4>Amazing Products & Delivery on time.</h4>
@@ -254,11 +267,14 @@
                 </li>
                 <li class="swiper-slide">
                   <article class="customer-card">
-                    <img
-                            class="customer-card__image"
-                            src="./images/sindy-kitch.jpg"
-                            alt="Sindy & Kitch"
-                    />
+                    <picture>
+                      <source srcset="./images/sindy-kitch.jpg, ./images/sindy-kitch-2x.jpg">
+                      <img
+                              class="customer-card__image"
+                              src="./images/sindy-kitch.jpg"
+                              alt="Sindy & Kitch"
+                      />
+                    </picture>
                     <div class="customer-card__text">
                       <h3>Sindy & Kitch</h3>
                       <h4>Great job with the trainer!</h4>

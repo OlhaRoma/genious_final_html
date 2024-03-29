@@ -1,12 +1,12 @@
 .contacts-section {
   position: relative;
-  background-image: url('/images/contacts-section-background-mob.png');
+  background-image: url('../images/contacts-section-background-mob.png');
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
 
   @media screen and (min-width: $bp-desktop) {
-    background-image: url('/images/contacts-section-background.png');
+    background-image: url('../images/contacts-section-background.png');
     background-position: center bottom;
   }
 

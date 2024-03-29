@@ -4,35 +4,35 @@
   font-family: "Rowdies";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/rowdies-v17-latin-regular.woff2") format("woff2");
+  src: url("../fonts/rowdies-v17-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: url("/fonts/roboto-v30-latin-300.woff2") format("woff2");
+  src: url("../fonts/roboto-v30-latin-300.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/roboto-v30-latin-regular.woff2") format("woff2");
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url("/fonts/roboto-v30-latin-500.woff2") format("woff2");
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/roboto-v30-latin-700.woff2") format("woff2");
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
 }
 :root {
   --color-primary-white: #FFFFFF;
@@ -439,14 +439,14 @@ img {
 
 .contacts-section {
   position: relative;
-  background-image: url("/images/contacts-section-background-mob.png");
+  background-image: url("../images/contacts-section-background-mob.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
 }
 @media screen and (min-width: 1280px) {
   .contacts-section {
-    background-image: url("/images/contacts-section-background.png");
+    background-image: url("../images/contacts-section-background.png");
     background-position: center bottom;
   }
 }
@@ -601,10 +601,10 @@ img {
     position: absolute;
     display: block;
     width: 292px;
-    height: 310px;
+    height: 305px;
     right: 3px;
-    top: -18px;
-    background-image: url("/images/footer-dog.png");
+    top: -12px;
+    background-image: url("../images/footer-dog.png");
     background-repeat: no-repeat;
     content: "";
   }
@@ -628,7 +628,7 @@ img {
   height: 146px;
   top: -136px;
   right: 43%;
-  background-image: url("/images/footer-dog-mobile.png");
+  background-image: url("../images/footer-dog-mobile.png");
   background-repeat: no-repeat;
   content: "";
 }
@@ -795,7 +795,7 @@ img {
 }
 
 .hero-section {
-  background-image: url("/images/hero-section-background.png");
+  background-image: url("../images/hero-section-background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -804,14 +804,18 @@ img {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 65px;
+  background-image: url("../images/hero-animation-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
   .hero-section__container {
-    gap: 65px;
-    background-image: url("/images/hero-animation.svg");
+    background-image: url("../images/hero-animation.png");
     background-repeat: no-repeat;
+    background-position: 469px 155px;
     background-size: auto;
-    background-position: 118% 51.7%;
   }
 }
 .hero-section__content {
@@ -857,11 +861,28 @@ img {
 @media screen and (min-width: 1280px) {
   .hero-section__animation {
     display: block;
+    position: relative;
     margin: 240px auto 60px;
-    background-image: url("/images/hero-section-dog-background.png");
+    background-image: url("../images/hero-section-dog-background.png");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
+  }
+}
+.hero-section__animation::after {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .hero-section__animation::after {
+    position: absolute;
+    display: block;
+    width: 506px;
+    height: 516px;
+    right: 0;
+    top: 15px;
+    background-image: url("../images/hero-section-dog-paws.png");
+    background-repeat: no-repeat;
+    content: "";
   }
 }
 .hero-section__image {
@@ -1000,21 +1021,40 @@ img {
   background-size: cover;
 }
 .services-section__title {
+  position: relative;
   padding-top: 34px;
   margin: 0 auto 24px;
   text-align: center;
+}
+.services-section__title::after {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .services-section__title::after {
+    position: absolute;
+    display: block;
+    width: 194px;
+    height: 144px;
+    right: 3px;
+    top: -18px;
+    background-image: url("/images/service-arrow.png");
+    background-repeat: no-repeat;
+    content: "";
+    animation: rotate 1s 0s linear;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media screen and (min-width: 768px) {
   .services-section__title {
     padding-top: 68px;
     margin: 0 auto 48px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .services-section__title {
-    background-image: url("/images/service-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center right;
   }
 }
 .services-section__container {
@@ -1064,7 +1104,8 @@ img {
 @media screen and (min-width: 1280px) {
   .walk-section__animation {
     display: block;
-    background-image: url("/images/walk-section-background.png");
+    position: relative;
+    background-image: url("../images/walk-section-background.png");
     background-repeat: no-repeat;
     background-position: 58px 90px;
     background-size: 78% 78%;
@@ -1072,6 +1113,17 @@ img {
 }
 .walk-section__image {
   padding: 175px 60px 100px;
+}
+.walk-section__button {
+  position: absolute;
+  top: 142px;
+  right: 100px;
+  width: 161px;
+  height: 123px;
+  background-image: url("../images/walk-section-video.png");
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 .walk-section__content {
   max-width: 320px;

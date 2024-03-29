@@ -293,12 +293,13 @@ img {
     align-items: center;
     color: var(--color-primary-black);
 }
-.pagination-link:hover {
+.pagination-link:hover,
+.pagination-link--active {
     color: var(--color-primary-white);
     border-radius: 2px;
     background-color: var(--color-primary-orange);
 }
-.pagination-button {
+.pagination-item {
     font-size: 14px;
 }
 

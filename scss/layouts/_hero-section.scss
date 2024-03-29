@@ -1,5 +1,5 @@
 .hero-section {
-  background-image: url('/images/hero-section-background.png');
+  background-image: url('../images/hero-section-background.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -8,15 +8,21 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 65px;
 
-    @media screen and (min-width: $bp-desktop) {
-      gap: 65px;
-      background-image: url('/images/hero-animation.svg');
+    background-image: url('../images/hero-animation-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      background-image: url('../images/hero-animation.png');
       background-repeat: no-repeat;
+      background-position: 469px 155px;
       background-size: auto;
-      background-position: 118% 51.7%;
     }
   }
+
   &__content {
     margin: 35px auto 65px;
     text-align: center;
@@ -56,14 +62,31 @@
 
     @media screen and (min-width: $bp-desktop) {
       display: block;
+      position: relative;
       margin: 240px auto 60px;
-      background-image: url('/images/hero-section-dog-background.png');
+      background-image: url('../images/hero-section-dog-background.png');
       background-repeat: no-repeat;
       background-position: left top;
       background-size: cover;
     }
+
+    &::after {
+      display: none;
+
+      @media screen and (min-width: $bp-desktop) {
+        position: absolute;
+        display: block;
+        width: 506px;
+        height: 516px;
+        right: 0;
+        top: 15px;
+        background-image: url('../images/hero-section-dog-paws.png');
+        background-repeat: no-repeat;
+        content: '';
+      }
+    }
   }
-  &__image{
+  &__image {
     margin: 55px 11px 0 72px;
   }
   &__button {

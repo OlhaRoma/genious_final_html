@@ -5,20 +5,43 @@
   background-size: cover;
 
   &__title {
+    position: relative;
     padding-top: 34px;
     margin: 0 auto 24px;
     text-align: center;
+
+    &::after {
+      display: none;
+
+      @media screen and (min-width: $bp-desktop) {
+        position: absolute;
+        display: block;
+        width: 194px;
+        height: 144px;
+        right: 3px;
+        top: -18px;
+        background-image: url('/images/service-arrow.png');
+        background-repeat: no-repeat;
+        content: '';
+        animation: rotate 1s 0s linear;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
 
     @media screen and (min-width: $bp-tablet) {
       padding-top: 68px;
       margin: 0 auto 48px;
     }
-    @media screen and (min-width: $bp-desktop) {
-      background-image: url('/images/service-arrow.svg');
-      background-repeat: no-repeat;
-      background-position: center right;
-    }
   }
+
   &__container {
     display: flex;
     flex-direction: column;

@@ -24,10 +24,13 @@
         position: absolute;
         display: block;
         width: 292px;
-        height: 310px;
+        height: 305px;
         right: 3px;
-        top: -18px;
-        background-image: url('/images/footer-dog.png');
+        top: -12px;
+        background-image: url('../images/footer-dog.png');
+        //@media (min-resolution: 2dppx) {
+        //  background-image: url('../images/footer-dog-2x.png');
+        //}
         background-repeat: no-repeat;
         content: '';
       }
@@ -52,7 +55,10 @@
       height: 146px;
       top: -136px;
       right: 43%;
-      background-image: url('/images/footer-dog-mobile.png');
+      background-image: url('../images/footer-dog-mobile.png');
+      //@media (min-resolution: 2dppx) {
+      //  background-image: url('../images/footer-dog-mobile-2x.png');
+      //}
       background-repeat: no-repeat;
       content: '';
 
