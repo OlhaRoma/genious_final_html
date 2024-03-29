@@ -27,6 +27,9 @@
     width: 161px;
     height: 123px;
     background-image: url('../images/walk-section-video.png');
+    @media (min-resolution: 2dppx) {
+      background-image: url('../images/walk-section-video-2x.png');
+    }
     background-color: transparent;
     border: none;
     cursor: pointer;

@@ -20,7 +20,10 @@
         height: 144px;
         right: 3px;
         top: -18px;
-        background-image: url('/images/service-arrow.png');
+        background-image: url('../images/service-arrow.png');
+        @media (min-resolution: 2dppx) {
+          background-image: url('../images/service-arrow-2x.png');
+        }
         background-repeat: no-repeat;
         content: '';
         animation: rotate 1s 0s linear;
@@ -28,10 +31,10 @@
 
       @keyframes rotate {
         0% {
-          transform: rotate(0);
+          transform: rotate(360deg);
         }
         100% {
-          transform: rotate(360deg);
+          transform: rotate(0);
         }
       }
     }

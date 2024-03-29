@@ -468,12 +468,22 @@ img {
   bottom: 0;
   background-image: url("../images/contacts-small-dog.png");
 }
+@media (min-resolution: 2dppx) {
+  .contacts-section::before {
+    background-image: url("../images/contacts-small-dog-2x.png");
+  }
+}
 .contacts-section::after {
   width: 322px;
   height: 752px;
   right: -5px;
   bottom: -70px;
   background-image: url("../images/contacts-big-dog.png");
+}
+@media (min-resolution: 2dppx) {
+  .contacts-section::after {
+    background-image: url("../images/contacts-big-dog-2x.png");
+  }
 }
 .contacts-section__container {
   max-width: 400px;
@@ -609,6 +619,11 @@ img {
     content: "";
   }
 }
+@media screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .footer__container::after {
+    background-image: url("../images/footer-dog-2x.png");
+  }
+}
 .footer__nav {
   position: relative;
   display: flex;
@@ -631,6 +646,11 @@ img {
   background-image: url("../images/footer-dog-mobile.png");
   background-repeat: no-repeat;
   content: "";
+}
+@media (min-resolution: 2dppx) {
+  .footer__nav::before {
+    background-image: url("../images/footer-dog-mobile-2x.png");
+  }
 }
 @media screen and (min-width: 1280px) {
   .footer__nav::before {
@@ -810,12 +830,22 @@ img {
   background-position: center bottom;
   background-size: auto;
 }
+@media (min-resolution: 2dppx) {
+  .hero-section__container {
+    background-image: url("../images/hero-animation-mobile-2x.png");
+  }
+}
 @media screen and (min-width: 768px) {
   .hero-section__container {
     background-image: url("../images/hero-animation.png");
     background-repeat: no-repeat;
     background-position: 469px 155px;
     background-size: auto;
+  }
+}
+@media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-section__container {
+    background-image: url("../images/hero-animation-2x.png");
   }
 }
 .hero-section__content {
@@ -1037,18 +1067,23 @@ img {
     height: 144px;
     right: 3px;
     top: -18px;
-    background-image: url("/images/service-arrow.png");
+    background-image: url("../images/service-arrow.png");
     background-repeat: no-repeat;
     content: "";
     animation: rotate 1s 0s linear;
   }
 }
+@media screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .services-section__title::after {
+    background-image: url("../images/service-arrow-2x.png");
+  }
+}
 @keyframes rotate {
   0% {
-    transform: rotate(0);
+    transform: rotate(360deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1124,6 +1159,11 @@ img {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+@media (min-resolution: 2dppx) {
+  .walk-section__button {
+    background-image: url("../images/walk-section-video-2x.png");
+  }
 }
 .walk-section__content {
   max-width: 320px;

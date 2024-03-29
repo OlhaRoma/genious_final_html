@@ -11,12 +11,18 @@
     gap: 65px;
 
     background-image: url('../images/hero-animation-mobile.png');
+    @media (min-resolution: 2dppx) {
+      background-image: url('../images/hero-animation-mobile-2x.png');
+    }
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: auto;
 
     @media screen and (min-width: $bp-tablet) {
       background-image: url('../images/hero-animation.png');
+      @media (min-resolution: 2dppx) {
+        background-image: url('../images/hero-animation-2x.png');
+      }
       background-repeat: no-repeat;
       background-position: 469px 155px;
       background-size: auto;
